@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.ecran {
+    background-image: url(images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carte {
+    width: 90%;
+    max-width: 500px;
+    color: aliceblue;
+    text-align: center;
+    padding: 50px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.carte img {
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid moccasin;
+}
+
+.carte h2 {
+    font-size: 50px;
+    font-weight: 600px;
+    margin-top: 20px;
+}
+
+.carte p {
+    font-size: 20px;
+    margin: 10px auto;
+    max-width: 330px;
+}
+
+.carte .reseaux img {
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    margin: 10px 5px;
+    transition: background 0.4s;
+}
+
+.carte .reseaux img:hover {
+    background: rgb(175, 20, 186);
+}
+
+.button {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    background: #fff;
+    color: rgb(175, 20, 186);
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 30px 0 10px;
+}
+
+/* Iphone SE 12 pro*/
+@media screen and (max-width: 555px) and (max-height:780px) {
+    .ecran {
+        height: 100%;
+    }
+
+    .carte {
+        max-width: 400px;
+    }
+}
+
+/*Surface Pro*/
+@media screen and (max-width: 555px) and (max-height:780px) {
+    .ecran {
+        height: 100%;
+    }
+}
